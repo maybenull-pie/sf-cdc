@@ -43,3 +43,10 @@ node index.mjs | bunyan
 * hardcoded to specific aws sns arn for POC
 * hardcoded to only Lead change event for POC
 * .NET consumer is Policy branch `spike/INS-1337-native-spike` running in AWS Sandbox env from dev machine
+
+# ToDo
+* Messaging Platform: continue using SNS or move to Kenesis or ?
+* Deployment: Lamda or ?.  handle service restarts, monitoring, etc
+* Logging: bunyan has cloudwatch and seq streams but haven't proven them
+* Persistence: replay id needs persistence.  mongo or dynamo or ? 
+* Long Running: keep this app running and processing all the time or schedule a run every N timespan
